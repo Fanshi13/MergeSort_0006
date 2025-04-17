@@ -24,8 +24,7 @@ void input()
 
     cout << "\n==========================";
     cout << "\nInputkan Isi Element Array";
-    cout << "\n==========================";
-    << endl;
+    cout << "\n==========================" << endl;
 
     for (int i = 0; i < n; i++)
     {
@@ -72,5 +71,11 @@ void mergeSort(int low, int high)
         B[k] = arr[j]; // step 4.e.i
         j++;           // step 4.e.ii
         k++;           // step 4.e.iii
+    }
+
+    // step 5
+    for (int x = low; x <= high; x++)
+    {
+        arr[x] = B[x];
     }
 }
